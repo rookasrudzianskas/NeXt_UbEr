@@ -18,7 +18,7 @@ export default function Home() {
         // fires on first run 🔥
        const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
+            style: 'mapbox://styles/rokasr/ckwnbxwet0log14t5m0zzuljv',
             center: [-74.50, 40],
             zoom: 3
         });
