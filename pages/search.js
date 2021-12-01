@@ -21,7 +21,12 @@ const Search = () => {
                     <span className="text-6xl font-thin">+</span>
                 </div>
             </div>
-            <div className="">
+            <div className="bg-white mt-4 py-3">
+                <span className="font-bold ml-10">Saved Locations</span>
+            </div>
+
+            <div className="bg-black flex items-center justify-center py-3 mt-6 mx-6">
+                <span className="text-white">Confirm Locations</span>
             </div>
         </div>
     );
