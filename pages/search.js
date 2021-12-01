@@ -14,8 +14,8 @@ const Search = () => {
                     <Image src={'https://img.icons8.com/windows/50/000000/square-full.png'} width={2} height={40} resizeMode={'contain'} className={""}/>
                 </div>
                 <div className="ml-5 flex flex-col">
-                    <input type="text" placeholder={'Search'} className={"h-10 bg-gray-200 outline-none"}/>
-                    <input type="text" placeholder={'Enter the destination location...'} className={"h-10 bg-gray-200 outline-none mt-8"}/>
+                    <input type="text" placeholder={'Search'} className={"h-10 bg-gray-200 outline-none rounded-md w-96 px-2"}/>
+                    <input type="text" placeholder={'Enter the destination location...'} className={"h-10 bg-gray-200 outline-none mt-8 rounded-md w-96 px-2"}/>
                 </div>
             </div>
             <div className="">
