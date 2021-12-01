@@ -16,7 +16,12 @@ export default function Home() {
 
     useEffect(() => {
         // fires on first run 🔥
-
+       const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-74.50, 40],
+            zoom: 9
+        });
     }, []);
 
   return (
@@ -26,7 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-red-500 flex-1">Map</div>
+      <div id={'map'} className="bg-red-500 flex-1">Map</div>
       <div className="bg-green-500 flex-1">Start</div>
     </div>
   )
