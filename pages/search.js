@@ -9,7 +9,9 @@ const Search = () => {
             </div>
             <div className="">
                 <div>
-                    <Image src={'https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png'} width={40} height={40} resizeMode={'contain'} className={""}/>
+                    <Image src={'https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png'} width={10} height={10} resizeMode={'contain'} className={""}/>
+                    <Image src={'https://img.icons8.com/ios/50/9CA3AF/vertical-line.png'} width={40} height={40} resizeMode={'contain'} className={""}/>
+                    <Image src={'https://img.icons8.com/windows/50/000000/square-full.png'} width={10} height={10} resizeMode={'contain'} className={""}/>
                 </div>
             </div>
             <div className="">
