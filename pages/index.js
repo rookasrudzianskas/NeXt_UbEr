@@ -21,7 +21,9 @@ export default function Home() {
       <Map />
       <div className="bg-white flex-1">
         <Header />
-        <ActionButtons />
+          <div className="">
+            <ActionButtons />
+          </div>
       </div>
     </div>
   )
