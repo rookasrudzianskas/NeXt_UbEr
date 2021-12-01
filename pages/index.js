@@ -11,8 +11,8 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+          <a className="text-blue-600" href="https://byrookas.com">
+            byRookas.js
           </a>
         </h1>
 
