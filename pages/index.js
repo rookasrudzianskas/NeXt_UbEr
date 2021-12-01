@@ -6,6 +6,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhN
 
 export default function Home() {
 
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/rokasr/ckwnbxwet0log14t5m0zzuljv',
+        center: [-74.50, 40],
+        zoom: 9
+    });
+
   return (
     <div className="flex flex-col min-h-screen bg-blue-500">
       <Head>
