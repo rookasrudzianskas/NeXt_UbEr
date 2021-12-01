@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {useEffect} from "react";
 import Map from "../components/Map";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -14,8 +15,13 @@ export default function Home() {
       </Head>
 
 
+
       <Map />
-      <div className="bg-green-500 flex-1">Start</div>
+      <div className="bg-green-500 flex-1">
+          <div>
+              <Image src="https://i.ibb.co/84stgjq/uber-technologies-new-2021814.jpg" />
+          </div>
+      </div>
     </div>
   )
 }
