@@ -8,8 +8,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-red-500">Map</div>
-      <div className="bg-green-500">Start</div>
+      <div className="bg-red-500 flex-1">Map</div>
+      <div className="bg-green-500 flex-1">Start</div>
     </div>
   )
 }
