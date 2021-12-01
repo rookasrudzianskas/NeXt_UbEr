@@ -20,7 +20,7 @@ export default function Home() {
             container: 'map',
             style: 'mapbox://styles/rokasr/ckwnbxwet0log14t5m0zzuljv',
             center: [-74.50, 40],
-            zoom: 3
+            zoom: 9
         });
     }, []);
 
@@ -31,7 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div id={'map'} className="bg-red-500 flex-1">Map</div>
+      <div id={'map'} className="bg-red-500 flex-1"></div>
       <div className="bg-green-500 flex-1">Start</div>
     </div>
   )
