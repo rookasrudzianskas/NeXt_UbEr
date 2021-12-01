@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import Map from "../components/Map";
 import Image from "next/image";
 import Header from "../components/Header";
+import ActionButtons from "../components/ActionButtons";
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <Map />
       <div className="bg-white flex-1">
         <Header />
-
+        <ActionButtons />
       </div>
     </div>
   )
