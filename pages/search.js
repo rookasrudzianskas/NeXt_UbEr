@@ -28,9 +28,11 @@ const Search = () => {
                 <span className="font-bold ml-10">Saved Locations</span>
             </div>
 
-            <div className="bg-black flex items-center justify-center py-3 mt-6 mx-6 hover:bg-gray-800 transition:duration-200  cursor-pointer">
-                <span className="text-white">Confirm Locations</span>
-            </div>
+            <Link href={'/confirm'}>
+                <div className="bg-black flex items-center justify-center py-3 mt-6 mx-6 hover:bg-gray-800 transition:duration-200  cursor-pointer">
+                    <span className="text-white">Confirm Locations</span>
+                </div>
+            </Link>
         </div>
     );
 };
