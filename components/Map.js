@@ -26,7 +26,7 @@ const Map = () => {
     }, []);
 
     return (
-        <div id={'map'} className="bg-gray-500 flex-1"/>
+        <div id={'map'} className="bg-gray-500 h-96"/>
 
     );
 };
