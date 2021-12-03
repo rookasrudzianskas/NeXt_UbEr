@@ -44,6 +44,8 @@ const confirm = () => {
             </div>
             <div className=" flex-1">
                 Ride selector
+                {pickupCoordinates}
+                {dropOffCoordinates}
             </div>
         </div>
     );
