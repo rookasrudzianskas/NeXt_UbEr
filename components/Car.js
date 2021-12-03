@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Car = ({car}) => {
     return (
-        <div className="flex  flex-row items-center justify-center p-2">
+        <div className="flex  flex-row items-center justify-center p-2 hover:bg-gray-200 duration-250">
             <div className="flex flex-1 items-center">
                 <div className="flex pr-3">
                     <Image src={car?.imgUrl} className="" width={60} height={60} />
