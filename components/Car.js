@@ -4,18 +4,21 @@ import Image from "next/image";
 const Car = ({car, pickupCoordinates, dropOffCoordinates}) => {
 
     const [rideDuration, setRideDuration] = useState(0);
-    console.log(pickupCoordinates, dropOffCoordinates);
 
     useEffect(() => {
+        if(!pickupCoordinates || !dropOffCoordinates) {
+            return;
+        }
         const fetchTime = async () => {
             await fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinates[0]},${pickupCoordinates[1]};${dropOffCoordinates[0]},${dropOffCoordinates[1]}?geometries=geojson&access_token=pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA`)
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
-                    setRideDuration(data.routes[0].duration);
+                    console.log('Something');
+                    // setRideDuration(data.routes[0].duration);
                 })
                 .catch(err => console.log(err));
         }
+        fetchTime();
     }, []);
 
     return (
