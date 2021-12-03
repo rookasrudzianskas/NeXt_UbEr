@@ -1,9 +1,6 @@
-
-import {initializeApp} from 'firebase/app';
-import firebase from "firebase/compat";
-
-
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import firebase from "firebase";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAURCaelDgrCgH5_3yR-9u3_rczxcVA43w",
     authDomain: "rookas-uber.firebaseapp.com",
