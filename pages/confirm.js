@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Map from "../components/Map";
 import {useRouter} from "next/router";
+import RideSelector from "../components/RideSelector";
 
 const confirm = () => {
 
@@ -47,9 +48,12 @@ const confirm = () => {
                 />
             </div>
             <div className=" flex-1">
-                Ride selector
-                {pickupCoordinates}
-                {dropOffCoordinates}
+                <div>
+                    <RideSelector />
+                </div>
+                <div>
+
+                </div>
             </div>
         </div>
     );
