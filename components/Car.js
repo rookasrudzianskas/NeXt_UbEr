@@ -4,6 +4,8 @@ import Image from "next/image";
 const Car = ({car}) => {
 
     const [rideDuration, setRideDuration] = useState(0);
+    const {pickupCoordinates, dropOffCoordinates} = car;
+
     useEffect(() => {
         const fetchTime = async () => {
             await fetch('https://api.')

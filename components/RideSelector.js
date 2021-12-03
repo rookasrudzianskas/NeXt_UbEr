@@ -11,7 +11,7 @@ const RideSelector = ({pickupCoordinates, dropOffCoordinates}) => {
 
             <div className="">
                 {carList.map((car, index) => (
-                    <Car key={index} car={car} />
+                    <Car pickup={pickupCoordinates} dropOffCoordinates={dropOffCoordinates} key={index} car={car} />
                 ))}
             </div>
         </div>
