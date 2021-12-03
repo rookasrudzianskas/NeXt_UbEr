@@ -2,7 +2,7 @@ import React from 'react';
 
 const RideSelector = () => {
     return (
-        <div>
+        <div className="">
             <h1>Ride Selector</h1>
         </div>
     );
