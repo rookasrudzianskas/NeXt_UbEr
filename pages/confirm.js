@@ -48,11 +48,11 @@ const confirm = () => {
                 />
             </div>
             <div className=" flex-1">
-                <div>
+                <div className="">
                     <RideSelector />
                 </div>
-                <div>
-
+                <div className="bg-black text-white">
+                    Confirm UberX
                 </div>
             </div>
         </div>
