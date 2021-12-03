@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
 const Search = () => {
+
+    const [pickup, setPickup] = useState('');
+    const [dropoff, setDropoff] = useState('');
+
     return (
         <div className="bg-gray-200 h-screen">
             <Link href={'/'}>
@@ -17,8 +21,8 @@ const Search = () => {
                     <Image src={'https://img.icons8.com/windows/50/000000/square-full.png'} width={2} height={40} resizeMode={'contain'} className={""}/>
                 </div>
                 <div className="ml-5 flex flex-col flex-1">
-                    <input type="text" placeholder={'Search'} className={"h-10 bg-gray-200 outline-none rounded-md w-96 px-2"}/>
-                    <input type="text" placeholder={'Enter the destination location...'} className={"h-10 bg-gray-200 outline-none mt-8 rounded-md w-96 px-2"}/>
+                    <input value={pickup} onChange={(e) => setPickup(e.target.value)} type="text" placeholder={'Search'} className={"h-10 bg-gray-200 outline-none rounded-md w-96 px-2"}/>
+                    <input value={dropoff} onChange={(e) => setDropoff(e.target.value)} type="text" placeholder={'Enter the destination location...'} className={"h-10 bg-gray-200 outline-none mt-8 rounded-md w-96 px-2"}/>
                 </div>
                 <div className="flex items-center mb-5 rounded-full">
                     <span className="text-6xl font-thin">+</span>
@@ -31,8 +35,10 @@ const Search = () => {
             <Link href={{
                 pathname: '/confirm',
                 query: {
-                    pickup: 'Toms River',
-                    dropoff: 'Trenton',
+                    // pickup: 'Toms River',
+                    // dropoff: 'Trenton',
+                    pickup: pickup,
+                    dropoff: dropoff,
                 }
             }}>
                 <div className="bg-black flex items-center justify-center py-3 mt-6 mx-6 hover:bg-gray-800 transition:duration-200  cursor-pointer">
