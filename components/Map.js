@@ -5,7 +5,7 @@ import mapboxgl from 'mapbox-gl';
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA';
 
 
-const Map = ({dropOffCoordinates, pickupCoordinates}) => {
+const Map = (props) => {
 
 
     // const map = new mapboxgl.Map({
@@ -21,6 +21,11 @@ const Map = ({dropOffCoordinates, pickupCoordinates}) => {
             .setLngLat([-74.50, 40])
             .addTo(map);
     }
+
+    useEffect(() => {
+        console.log('pickupCoordinates', props.pickupCoordinates);
+        console.log('dropOffCoordinates', props.dropOffCoordinates);
+    }, []);
 
     useEffect(() => {
         // fires on first run 🔥
