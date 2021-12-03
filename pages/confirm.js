@@ -9,7 +9,7 @@ const confirm = () => {
     const [pickupCoordinates, setPickupCoordinates] = useState(null);
     const [dropOffCoordinates, setDropOffCoordinates] = useState(null);
 
-    const gePickup = () => {
+    const gePickup = (pickup) => {
         // fetching the data
         fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?` +
         new URLSearchParams({
@@ -21,7 +21,7 @@ const confirm = () => {
         });
     }
 
-    const dropOffCoords = () => {
+    const dropOffCoords = (dropoff) => {
         // fetching the data
         fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropoff}.json?` +
         new URLSearchParams({
@@ -34,9 +34,9 @@ const confirm = () => {
     }
 
     useEffect(() => {
-        gePickup();
-        dropOffCoords();
-    }, []);
+        gePickup(pickup);
+        dropOffCoords(dropoff);
+    }, [pickup, dropoff]);
 
     return (
         <div className="h-screen">
