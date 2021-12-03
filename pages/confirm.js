@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Map from "../components/Map";
 
 const confirm = () => {
@@ -10,8 +10,12 @@ const confirm = () => {
         fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?access_token=pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA`).then(response => response.json()).then(data => {
             console.log(data)
 
-        })
+        });
     }
+
+    useEffect(() => {
+        getCoorinates()
+    }, []);
 
     return (
         <div className="h-screen">
