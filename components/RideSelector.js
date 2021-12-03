@@ -2,7 +2,7 @@ import React from 'react';
 import Car from "./Car";
 import {carList} from "../assets/carList";
 
-const RideSelector = () => {
+const RideSelector = ({pickupCoordinates, dropOffCoordinates}) => {
     return (
         <div className="">
             <div className="text-gray-500 flex text-center border-b w-full">
