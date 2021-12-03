@@ -15,6 +15,13 @@ const Map = () => {
     //     zoom: 9
     // });
 
+
+    const addToMap = (map) => {
+        const marker1 = new mapboxgl.Marker()
+            .setLngLat([-74.50, 40])
+            .addTo(map);
+    }
+
     useEffect(() => {
         // fires on first run 🔥
         const map = new mapboxgl.Map({
@@ -23,6 +30,7 @@ const Map = () => {
             center: [-74.50, 40],
             zoom: 9
         });
+        addToMap(map);
     }, []);
 
     return (
