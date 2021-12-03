@@ -23,6 +23,7 @@ const Map = (props) => {
     }
 
     useEffect(() => {
+        if(!props.pickupCoordinates || !props.dropOffCoordinates) return;
         console.log('pickupCoordinates', props.pickupCoordinates);
         console.log('dropOffCoordinates', props.dropOffCoordinates);
     }, []);
