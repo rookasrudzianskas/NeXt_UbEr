@@ -40,7 +40,10 @@ const confirm = () => {
     return (
         <div className="h-screen">
             <div className=" flex-1 h-96">
-                <Map />
+                <Map
+                    pickupCoordinates={pickupCoordinates}
+                    dropOffCoordinates={dropOffCoordinates}
+                />
             </div>
             <div className=" flex-1">
                 Ride selector
