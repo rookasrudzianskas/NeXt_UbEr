@@ -52,7 +52,7 @@ const confirm = () => {
                     <div  className="flex flex-1" >
                         <RideSelector/>
                     </div>
-                    <div className="bg-black flex text-white">
+                    <div className="bg-black flex text-white p-4 mr-10 ml-10 mb-10 mt-5">
                         Confirm UberX
                     </div>
                 </>
