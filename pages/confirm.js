@@ -1,8 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Map from "../components/Map";
 
 const confirm = () => {
 
+    const [pickupCoordinates, setPickupCoordinates] = useState(null);
+    const [dropOffCoordinates, setDropOffCoordinates] = useState(null);
 
     const gePickup = () => {
         const pickup = "Toms River"
