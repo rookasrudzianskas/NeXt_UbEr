@@ -12,7 +12,7 @@ const confirm = () => {
             access_token: 'pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA',
             limit: 1,
         })).then(response => response.json()).then(data => {
-            console.log(data)
+            console.log(data.features[0].center)
 
         });
     }
