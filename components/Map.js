@@ -5,7 +5,7 @@ import mapboxgl from 'mapbox-gl';
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA';
 
 
-const Map = () => {
+const Map = ({dropOffCoordinates, pickupCoordinates}) => {
 
 
     // const map = new mapboxgl.Map({
