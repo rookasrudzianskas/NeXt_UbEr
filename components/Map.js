@@ -34,6 +34,7 @@ const Map = (props) => {
         if(!props.pickupCoordinates || !props.dropOffCoordinates) return;
 
         addToMap(map, props.pickupCoordinates);
+        addToMap(map, props.dropOffCoordinates);
     }, [props.pickupCoordinates, props.dropOffCoordinates]);
 
 

@@ -20,7 +20,7 @@ const confirm = () => {
     }
 
     const dropOffCoords = () => {
-        const dropOff = "Lakewood"
+        const dropOff = "Trenton"
         // fetching the data
         fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${dropOff}.json?` +
         new URLSearchParams({
