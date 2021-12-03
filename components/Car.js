@@ -10,11 +10,11 @@ const Car = ({car}) => {
                 </div>
                 <div>
                     <h3>{car?.service}</h3>
-                    <h4 className="text-xs text-blue-500">5 min away</h4>
+                    <h4 className="text-xs text-blue-500">{5 * car?.multiplier} min away</h4>
                 </div>
             </div>
             <div>
-                <h3 className="font-bold">$10.00</h3>
+                <h3 className="font-bold">${(3 * car?.multiplier).toFixed(2)}</h3>
             </div>
         </div>
     );
