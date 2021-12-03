@@ -8,7 +8,7 @@ const Car = ({car}) => {
 
     useEffect(() => {
         const fetchTime = async () => {
-            await fetch('https://api.')
+            await fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/$`)
         }
     }, []);
 
