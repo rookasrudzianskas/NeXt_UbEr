@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 
 const Car = ({car}) => {
+
+    useEffect(() => {
+
+    }, []);
+
     return (
         <div className="flex  flex-row items-center justify-center p-2 hover:bg-gray-200 duration-250">
             <div className="flex flex-1 items-center">
