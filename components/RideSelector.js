@@ -1,4 +1,5 @@
 import React from 'react';
+import Car from "./Car";
 
 const RideSelector = () => {
     return (
@@ -8,7 +9,7 @@ const RideSelector = () => {
             </div>
 
             <div className="">
-
+                <Car />
             </div>
         </div>
     );
