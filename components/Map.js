@@ -16,17 +16,11 @@ const Map = (props) => {
     // });
 
 
-    const addToMap = (map) => {
+    const addToMap = (map, coordinates) => {
         const marker1 = new mapboxgl.Marker()
-            .setLngLat([-74.50, 40])
+            .setLngLat(coordinates)
             .addTo(map);
     }
-
-    useEffect(() => {
-        if(!props.pickupCoordinates || !props.dropOffCoordinates) return;
-        console.log('pickupCoordinates', props.pickupCoordinates);
-        console.log('dropOffCoordinates', props.dropOffCoordinates);
-    }, []);
 
     useEffect(() => {
         // fires on first run 🔥
@@ -36,8 +30,13 @@ const Map = (props) => {
             center: [-74.50, 40],
             zoom: 9
         });
-        addToMap(map);
-    }, []);
+
+        if(!props.pickupCoordinates || !props.dropOffCoordinates) return;
+
+        addToMap(map, props.pickupCoordinates);
+    }, [props.pickupCoordinates, props.dropOffCoordinates]);
+
+
 
     return (
         <div id={'map'} className="bg-gray-500 h-96"/>
