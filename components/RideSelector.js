@@ -1,5 +1,6 @@
 import React from 'react';
 import Car from "./Car";
+import {carList} from "../assets/carList";
 
 const RideSelector = () => {
     return (
@@ -9,7 +10,9 @@ const RideSelector = () => {
             </div>
 
             <div className="">
-                <Car />
+                {carList.map((car, index) => (
+                    <Car key={index} car={car} />
+                ))}
             </div>
         </div>
     );
