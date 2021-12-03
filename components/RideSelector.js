@@ -6,6 +6,10 @@ const RideSelector = () => {
             <div className="">
                 Choose a ride
             </div>
+
+            <div className="">
+
+            </div>
         </div>
     );
 };
