@@ -40,20 +40,24 @@ const confirm = () => {
     }, [pickup, dropoff]);
 
     return (
-        <div className="h-screen flex-1">
+        // <div className="h-screen flex-1">
+
+            <div className="flex flex-col h-screen">
+
                 <Map
-                    pickupCoordinates={pickupCoordinates}
-                    dropOffCoordinates={dropOffCoordinates}
+                     pickupCoordinates={pickupCoordinates}
+                     dropOffCoordinates={dropOffCoordinates}
                 />
-            <div className="flex flex-1 flex-col">
-                <div  className="" >
-                    <RideSelector/>
-                </div>
-                <div className="bg-black text-white">
-                    Confirm UberX
-                </div>
+                <>
+                    <div  className="flex flex-1" >
+                        <RideSelector/>
+                    </div>
+                    <div className="bg-black flex text-white">
+                        Confirm UberX
+                    </div>
+                </>
             </div>
-        </div>
+        // </div>
     );
 };
 
