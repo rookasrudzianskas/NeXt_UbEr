@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 
 const Car = ({car}) => {
+
+    const [rideDuration, setRideDuration] = useState(0);
 
     useEffect(() => {
 
