@@ -8,12 +8,7 @@ const confirm = () => {
                 <Map />
             </div>
             <div className=" flex-1">
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                Ride selector
             </div>
         </div>
     );
